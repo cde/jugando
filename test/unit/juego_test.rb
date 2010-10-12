@@ -1,8 +1,9 @@
 require 'test_helper'
 
 class JuegoTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
+  #Ejemplo de unit test
+  test "juego no se debe crear sin titulo" do
+    juego = Juego.new
+    assert !juego.save
   end
 end
