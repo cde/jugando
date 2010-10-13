@@ -12,7 +12,7 @@ group :test, :development do
   gem 'rspec', '>=2.0.0.beta.22'
   gem "rspec-rails", ">= 2.0.0.beta.22"
   gem 'webrat'
-  gem 'autotest'
-  gem 'spork', '0.8.4'
+#  gem 'autotest'
+#  gem 'spork', '0.8.4'
 end
 
