@@ -1,8 +1,6 @@
 Jugando::Application.routes.draw do
   get "paginas/home"
-
   get "paginas/contact"
-
   resources :juegos
 
   # The priority is based upon order of creation:

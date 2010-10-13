@@ -12,7 +12,20 @@ group :test, :development do
   gem 'rspec', '>=2.0.0.beta.22'
   gem "rspec-rails", ">= 2.0.0.beta.22"
   gem 'webrat'
-#  gem 'autotest'
-#  gem 'spork', '0.8.4'
+  gem 'autotest'
+  gem 'spork', '0.8.4'
 end
 
+Rapido Y Limpio
+
+Rapido y Sucio php
+Lento y Elegante java
+
+web java aplicacion xml
+algunos framework java requiere mucho xml
+
+
+Django
+
+phyton inspirado en rails
+php simphony
