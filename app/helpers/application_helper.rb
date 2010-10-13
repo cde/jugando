@@ -1,6 +1,6 @@
 module ApplicationHelper
   def title
-    base_title = "Jugando"
+    base_title = "Railing 3.0.0"
     if @title.nil?
       base_title
     else
