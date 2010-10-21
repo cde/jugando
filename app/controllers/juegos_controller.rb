@@ -44,7 +44,7 @@ class JuegosController < ApplicationController
 
     respond_to do |format|
       if @juego.save
-        format.html { redirect_to(@juego, :notice => 'Juego was successfully created.') }
+        format.html { redirect_to(juegos_path, :notice => 'Juego was successfully created.') }
         format.xml  { render :xml => @juego, :status => :created, :location => @juego }
       else
         format.html { render :action => "new" }

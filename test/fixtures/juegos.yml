@@ -4,8 +4,3 @@ pacman:
   titulo: Pacman
   descripcion: Pacmac ataca
   url: http://www.pacman.com
-
-two:
-  titulo: MyString
-  descripcion: MyText
-  url: MyString

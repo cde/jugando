@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+Juego.create(:titulo => 'Despicable Me', :descripcion=> 'iPad juego de la pelicula Despicable Me', :url => 'http://theappera.com/')

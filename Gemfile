@@ -11,6 +11,10 @@ gem 'nokogiri'
 group :test, :development do
   gem 'rspec', '>=2.0.0.beta.22'
   gem "rspec-rails", ">= 2.0.0.beta.22"
+  gem "cucumber-rails", ">= 0.3.2"
+  gem "cucumber"
+  gem "database_cleaner"
+  gem "capybara"
   gem 'webrat'
   gem 'autotest'
   gem 'spork', '0.8.4'

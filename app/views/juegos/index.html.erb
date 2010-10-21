@@ -3,25 +3,27 @@
 <table>
   <tr>
     <th>Titulo</th>
-    <th>Descripcion</th>
     <th>Url</th>
+    <th>Popularidad</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
-<% @juegos.each do |juego| %>
-  <tr>
-    <td><%= juego.titulo %></td>
-    <td><%= juego.descripcion %></td>
-    <td><%= juego.url %></td>
-    <td><%= link_to 'Show', juego %></td>
-    <td><%= link_to 'Edit', edit_juego_path(juego) %></td>
-    <td><%= link_to 'Destroy', juego, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <% @juegos.each do |juego| %>
+      <tr>
+        <td><%= link_to juego.titulo, juego %></td>
+        <td><%= juego.url %></td>
+        <td><%= pluralize(juego.votos.length, 'voto') %></td>
+        <td><%= link_to '+1', juego_votos_path(:juego_id => juego.id), :confirm => 'Are you sure?', :method => :delete %></td>
+
+        <td><%= link_to 'Show', juego, :method => :delete %></td>
+        <td><%= link_to 'Edit', edit_juego_path(juego) %></td>
+        <td><%= link_to 'Delete', juego, :confirm => 'Are you sure?', :method => 'delete' %></td>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
 <%= link_to 'New Juego', new_juego_path %>
