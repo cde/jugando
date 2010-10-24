@@ -136,8 +136,8 @@ DEPENDENCIES
   database_cleaner
   nokogiri
   rails (= 3.0.0)
-  rspec (>= 2.0.0.beta.22)
-  rspec-rails (>= 2.0.0.beta.22)
+  rspec (= 2.0.0)
+  rspec-rails (= 2.0.0)
   ruby-debug
   spork (= 0.8.4)
   sqlite3-ruby (= 1.2.5)

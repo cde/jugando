@@ -9,8 +9,8 @@ gem 'ruby-debug'
 gem 'nokogiri'
 
 group :test, :development do
-  gem 'rspec', '>=2.0.0.beta.22'
-  gem "rspec-rails", ">= 2.0.0.beta.22"
+  gem 'rspec', '=2.0.0'
+  gem "rspec-rails", "=2.0.0"
   gem "cucumber-rails", ">= 0.3.2"
   gem "cucumber"
   gem "database_cleaner"
