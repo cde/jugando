@@ -1,4 +1,6 @@
 Jugando::Application.routes.draw do
+  get "users/new"
+
   match '/contact', :to => 'paginas#contact'
   match '/home'   , :to => 'paginas#home'
   resources :juegos do  

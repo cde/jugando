@@ -15,7 +15,7 @@
         <td><%= link_to juego.titulo, juego %></td>
         <td><%= juego.url %></td>
         <td><%= pluralize(juego.votos.length, 'voto') %></td>
-        <td><%= link_to '+1', juego_votos_path(:juego_id => juego.id), :confirm => 'Are you sure?', :method => :delete %></td>
+        <td><%= link_to '+1', juego_votos_path(juego.id), :method => 'post' %></td>
 
         <td><%= link_to 'Show', juego, :method => :delete %></td>
         <td><%= link_to 'Edit', edit_juego_path(juego) %></td>

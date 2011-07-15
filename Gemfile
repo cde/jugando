@@ -5,7 +5,7 @@ gem 'rails', '3.0.0'
 gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 
 # To use debugger
-gem 'ruby-debug'
+#gem 'ruby-debug'
 gem 'nokogiri'
 
 group :test, :development do
@@ -18,4 +18,6 @@ group :test, :development do
   gem 'webrat'
   gem 'autotest'
   gem 'spork', '0.8.4'
+  gem 'launchy'
+  gem 'shoulda'
 end

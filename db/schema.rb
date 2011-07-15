@@ -10,12 +10,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101013023212) do
+ActiveRecord::Schema.define(:version => 20101030130859) do
+
+  create_table "addresses", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "street"
+    t.string   "city"
+    t.string   "zip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "juegos", :force => true do |t|
-    t.string   "titulo"
-    t.text     "descripcion"
-    t.string   "url"
+    t.string    "titulo"
+    t.text      "descripcion"
+    t.string    "url"
+    t.datetime  "created_at"
+    t.datetime  "updated_at"
+    t.timestamp "published_on"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "nombre"
+    t.string   "email"
+    t.string   "gender"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
